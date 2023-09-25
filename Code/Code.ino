@@ -1,19 +1,19 @@
 #include <NewPing.h>
 #include <LiquidCrystal.h>
-LiquidCrystal lcd(A0, A1, A2, A3, A4, A5);
+LiquidCrystal lcd(12, 11, 10, 9, 8, 7);
 
-const int echo_L = 2;
-const int trig_L = 3;
-const int echo_M = 4;
-const int trig_M = 5;
-const int echo_R = 7;
-const int trig_R = 8;
+const int echo_L = A1;
+const int trig_L = A0;
+const int echo_M = A4;
+const int trig_M = A5;
+const int echo_R = A3;
+const int trig_R = A2;
 const int L1 = 6;
-const int L2 = 9;
-const int R1 = 10;
-const int R2 = 11;
-const int button = 12;
-const int pump = 13;
+const int L2 = 5;
+const int R1 = 4;
+const int R2 = 3;
+const int button = 13;
+const int pump = 2;
 int motor_speed = 255;
 int max_distance = 200;
 int distance_L = 0;
